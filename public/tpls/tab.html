@@ -1,0 +1,27 @@
+<div class="ui-container">
+	<div class="point menu-point">
+	    <div class="default menu">
+	    	<!-- ui-sref=".wall" -->
+	        <div class="item" ng-click="goWall()">
+	        	<a class="btn btn-info" href="javascript:;">签到墙</a>
+	        </div>
+	        <div class="item" ng-click="goPrize()">
+	        	<a class="btn btn-info" href="javascript:;">抽奖轴</a>
+	        </div>
+	        <div class="item" ng-click="goVote()">
+	        	<a class="btn btn-info" href="javascript:;">投票杆</a>
+	        </div>
+	        <div class="item" ng-click="goOut()">
+	        	<a class="btn btn-info" href="javascript:;">退&nbsp;&nbsp;&nbsp;&nbsp;出</a>
+	        </div>
+	        <i class="arrow"></i>
+	    </div>
+    </div>
+    <div class="point code-point">
+    	<div class="default code">
+    		<img ng-src="{{code}}">
+    		<i class="arrow" style="left:40px;"></i>
+    	</div>
+    </div>
+    <div ui-view="" class="ui-container bg-theme"></div>
+</div>

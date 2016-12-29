@@ -1,0 +1,13 @@
+<div class="wall-wrap" ng-controller="lk.wall.wallController">
+	<div class="wall-peoples">
+		<div class="wall-box">
+			<div class="wall-person" ng-repeat="user in users">
+				<div class="wall-head">
+					<img ng-src="{{user.headimgurl}}">
+				</div>
+				<p>{{user.nickname}}</p>
+			</div>
+		</div>
+	</div>
+	<div class="stars"></div>
+</div>
